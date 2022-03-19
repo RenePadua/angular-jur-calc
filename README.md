@@ -1,8 +1,6 @@
 <h1>Tarefa - Projeto JurosCalc</h1>
 
-<hr />
-
-<h2>Instruções</h2>
+<p>Instruções:</p>
 <p>Incluir no projeto do StackBlitz feito em aula:</p>
 <ul>
 <li>Uma página que calcule juros compostos a partir de inputs disponíveis na mesma página</li>
