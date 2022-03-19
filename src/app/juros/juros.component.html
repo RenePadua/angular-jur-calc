@@ -1,0 +1,14 @@
+<h2>Juros Simples</h2>
+
+<div>Valor presente (em R$):</div>
+
+<input type="number" step="0.01" [(ngModel)]="vp" />
+
+<div>Juros (em %):</div>
+<input type="number" step="0.01" [(ngModel)]="j" />
+
+<div>Período (em meses):</div>
+<input type="number" step="1" [(ngModel)]="n" />
+
+<h3>Valor futuro:</h3>
+<h4>R$ {{ getJuros() }}</h4>

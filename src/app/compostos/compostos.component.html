@@ -1,0 +1,49 @@
+<h2>Juros Compostos</h2>
+
+<!-- 
+<div>Valor presente (em R$):</div>
+
+<input type="number" step="0.01" [(ngModel)]="vp" />
+
+<div>Juros (em %):</div>
+<input type="number" step="0.01" [(ngModel)]="j" />
+
+<div>Período (em meses):</div>
+<input type="number" step="1" [(ngModel)]="n" />
+
+<h3>Valor futuro:</h3>
+<h4>R$ {{ getJuros() }}</h4>
+
+-->
+
+<div>Valor presente (em R$):</div>
+<input type="number" step="0.01" [(ngModel)]="vp" />
+
+<div>Juros (em %):</div>
+<input type="number" step="0.01" [(ngModel)]="j" min="0" />
+
+<div>Período (em meses):</div>
+<input type="number" step="1" [(ngModel)]="n" min="0" />
+
+<hr />
+
+<div>
+<h3>Valor futuro:</h3>
+<h4>R$ {{ CompostosResultado() }}</h4>
+
+</div>
+
+<div id="tabela">
+  <table>
+    <thead>
+      <th>Período</th>
+      <th>Acumulado ao mês</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let jurosCompostos of CompostosTable(); index as i">
+        <td>{{ i + 1 }}º Mês</td>
+        <td>R$ {{ jurosCompostos }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
